@@ -43,18 +43,21 @@ da en Tab
 
             <ul class="Nav__Link Nav__Link--Menu"><!--lista no ordenada-->
                 <li class="Nav__Items"><!--elementos de la lista-->
-                    <a href="#" class="Nav__Links">Inicio</a><!--se utiliza para crear enlaces hipertexto que permiten navegar entre diferentes páginas web-->
+                    <a href="#Inicio" class="Nav__Links">Acerca de</a><!--se utiliza para crear enlaces hipertexto que permiten navegar entre diferentes páginas web-->
                     <!--href: hace referencia a un enlace interno dentro de la misma pagina
                         #: enlace vacio, no va a ninguna parte-->
                 </li>
                 <li class="Nav__Items">
-                    <a href="#" class="Nav__Links">Acerca de</a>
+                    <a href="#Precios" class="Nav__Links">Precios</a>
                 </li>
                 <li class="Nav__Items">
-                    <a href="#" class="Nav__Links">Contacto</a>
+                    <a href="#Mejores__Reseñas" class="Nav__Links">Mejores Reseñas</a>
                 </li>
                 <li class="Nav__Items">
-                    <a href="#" class="Nav__Links">Blog</a>
+                    <a href="#Preguntas__Frecuentes" class="Nav__Links">Preguntas Frecuentes</a>
+                </li>
+                <li class="Nav__Items">
+                    <a href="#Contacto" class="Nav__Links">Contacto</a>
                 </li>
 
                 <img src="Picture/x-square.png" class="Nav__Close">
@@ -76,7 +79,7 @@ da en Tab
 
     <!--Para crear clases de forma automatica se escriben-->
     <main class="Main"><!--representa el contenido principal de la pagina-->
-        <section class="Container About">
+        <section class="Container About" id="Inicio">
             <h2 class="About__Subtitle">Adquiere el conocimiento sobre que 
                 son las polillas y como evitar que dominen el mundo
             </h2>
@@ -127,7 +130,7 @@ da en Tab
             </div>
         </section>   
 
-        <section class="Price Container">
+        <section class="Price Container" id="Precios">
             <h2 class="Price__Subtitle">Precios</h2>
             <div class="Price__Table">
                 <div class="Price__Element">
@@ -168,7 +171,7 @@ da en Tab
                 </div>
         </section>
 
-        <section class="FAQs">
+        <section class="FAQs" id="Mejores__Reseñas">
             <h2 class="FAQs__Title">Mejores Reseñas</h2>
             <div class="FAQs__Container">
                 <img src="Picture/arrow-to-left-stroke.png" class="FAQs__Arrow FAQs__Arrow--Size" id="Before">
@@ -222,7 +225,7 @@ da en Tab
             </div>
         </section>   
         
-        <section class="Questions Container"><!--Contenedor de las preguntas-->
+        <section class="Questions Container" id="Preguntas__Frecuentes"><!--Contenedor de las preguntas-->
             <h2 class="Questions__Subtitle">Preguntas Frecuentes</h2>
             <p class="Questions__Paragraph">Sección dedicada a las personas que tengan preguntas sobre
                 los servicios y necesiten una respuesta inmediata</p>
@@ -301,7 +304,7 @@ da en Tab
             </nav>
 
             <!--con formspree, se copia en el form action y method, y en input email se pega el name-->
-            <form class="Footer__Form" action="https://formspree.io/f/mkgywgrj" method="POST">
+            <form class="Footer__Form" action="https://formspree.io/f/mkgywgrj" method="POST" id="Contacto">
                 <h2 class="Footer__NewsLetter">Contactanos para unirte al nuevo mundo</h2>
                 <input type="email" placeholder="Email" class="Footer__Input" name="email"><!--para escribir emails--> 
                 <input type="submit" value="CONTACTA!!!!" class="Footer__Sumbit"><!--para enviar emails-->
@@ -323,5 +326,4 @@ da en Tab
     <script src="./JS/Question.js"></script>
     <script src="./JS/Menu.js"></script>
 </body>
-
 </html>
