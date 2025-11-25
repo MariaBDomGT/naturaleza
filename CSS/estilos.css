@@ -52,9 +52,8 @@ Modifier (modificador): variacion del elemento */
     dimensiones definidas del elemento.
     hidden: oculta la parte que no cabe*/
   background-color: #00000008; /*background-color: color de fondo*/
-  padding: var(
-    --padding-container
-  ); /*padding: define el espacio interno entre el contenido
+  padding: var(--padding-container); 
+    /*padding: define el espacio interno entre el contenido
     de un elemento y su borde*/
 }
 
@@ -88,11 +87,11 @@ en la barra lateral de la derecha, la que esta antes del de los colores*/
   left: 0; /*izquierda*/
   width: 100%; /*especifica el ancho del área de contenido de un elemento*/
   height: 100%; /*especifica la altura de un elemento*/
-  background-image: linear-gradient(180deg, #00000008 0%, #00000008 100%),url("../Picture/Polilla_1.jpg");
+  background-image: linear-gradient(180deg, #0000004d 0%, #0000004d 100%),url("../Picture/Polilla_1.jpg");
   background-size: cover; /*Controla el tamaño de las imagenes de fondo, 
     background-size: controla el tamaño de las imágenes de fondo de un elemento.
     cover: indica al navegador que reduzca la imagen de fondo al tamaño más pequeño posible*/
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 62%, 80% 100%, 20% 100%, 0 62%, 0% 20%);  
   /*clip-path: permite definir una región específica de un elemento que se mostrará, 
     ocultando todo el contenido que esté fuera de esa región.*/
   z-index: -1; /*Para que la imagen aparezca detras del texto*/
@@ -134,8 +133,9 @@ en la barra lateral de la derecha, la que esta antes del de los colores*/
 
 .Nav__Links {
   /*Contenido dentro de la lista*/
-  color: #0ddb1e;
+  color: #09ff1e;
   text-decoration: none; /*text-decoration: decoracion visual del texto, none: sin decoracion*/
+  font-weight: 50%;
 }
 
 .Nav__Menu {
@@ -190,6 +190,7 @@ en la barra lateral de la derecha, la que esta antes del de los colores*/
 .Section__Paragraph {
   margin-bottom: 20px; /*margin-bottom: define el espacio externo en la parte inferior de un elemento*/
   color: #012b03;
+  font-weight: 600;
 }
 
 .CTA {
@@ -256,10 +257,7 @@ en la barra lateral de la derecha, la que esta antes del de los colores*/
   margin: 0 auto;
   gap: 2em;
   overflow: hidden;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(260px, auto)
-  ); /*para hacer columnas*/
+  grid-template-columns: repeat(auto-fit,minmax(260px, auto)); /*para hacer columnas*/
   /*grid-template-columns: define el número y el tamaño de las columnas en una cuadrícula.
     repeat(cantidad, tamaño), 
     auto-fit: Ajusta automáticamente el número de columnas, expande las columnas existentes
@@ -444,10 +442,6 @@ en la barra lateral de la derecha, la que esta antes del de los colores*/
 
 .FAQs__Subtitles{
   color: #000000;
-}
-
-.FAQs__Service{
-  color: white;
 }
 
 .FAQs__Title {
@@ -700,5 +694,64 @@ en la barra lateral de la derecha, la que esta antes del de los colores*/
     right: 30px;
     width: 40px;
     cursor: pointer;
+  }
+}
+
+/*Knowledge archivo .HTML*/
+.Knowledge__Title2, .Knowledge__Paragraph2{
+  text-align: center;
+  font-weight: 450;
+  color: #033803;
+}
+
+.Knowledge__Table{
+ padding: 70px; 
+ display: flex;
+ flex-wrap: wrap;
+ gap: 4rem;
+ justify-content: space-evenly;
+ text-align: center;
+}
+
+.Knowledge__List{
+  text-align: left;
+}
+
+.Knowledge__Element{
+ background-color: #0c4911;
+ color: whitesmoke;
+ border-radius: 20px;
+ width: max-content;
+ padding: 50px;
+ display: flex;
+ grid-template-columns: 1fr max-content;
+ grid-column: 2/3;
+ grid-row: 1/2;
+ pointer-events: none;
+ justify-content: space-between;
+ gap: 1em;
+}
+
+.Knowledge__Element--Different{
+  background-color: #0ddb1e;
+  color: black;
+}
+
+.Knowledge__Img2{
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.Knowledge__Step, .Knowledge__Li{
+  text-decoration: double underline;
+}
+
+.Knowledge__Section{
+  text-align: left;
+  .Knowledge__Step, .Knowledge__P{
+    font-size: larger;
   }
 }
