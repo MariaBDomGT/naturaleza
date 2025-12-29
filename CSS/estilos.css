@@ -755,3 +755,39 @@ en la barra lateral de la derecha, la que esta antes del de los colores*/
     font-size: larger;
   }
 }
+
+.Questions__Title2{
+  text-align: center;
+  color: #012b03;
+}
+
+.Questions__Paragraph2{
+  font-weight: 600;
+  color: #115717;
+  border: dotted #13b413;
+}
+
+.Questions__Divi{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 20px;
+}
+
+.Questions__Element{
+  background-color: #012b03;
+  border-radius: 50px;
+  border: dashed #0c860c;
+  color: #ffffff;
+  width: 400px;
+  padding: 20px;
+}
+
+.Questions__Step{
+  text-align: center;
+}
+
+.Questions__href{
+  color: #09ff1e;
+  text-decoration: double;
+}
